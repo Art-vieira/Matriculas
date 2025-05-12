@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Schoolbell&display=swap");
+* {
+  margin: 0;
+  font-family: Poppins;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+p {
+  font-size: 1vw;
+}
+.formulario {
+  background-color: #fff;
+  height: 100vh;
+  padding: 2vw 5vw 1.5vw 6.5vw;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1rem;
+}
+
+.formulario .topo .voltar {
+  font-size: 1.563vw;
+}
+
+.formulario .topo p img {
+  margin: 0 0 -0.8vh 0;
+}
+
+.formulario .topo h2 {
+  margin: 1rem 0 0 0;
+}
+
+.upload-box {
+  display: inline-block;
+  width: 30vw;
+  height: 20vh;
+  padding: 2vh 2vw;
+  margin-top: 2vh;
+  color: #333;
+  text-align: center;
+  border: 0.4vh dashed #999;
+  border-radius: 2vh;
+  font-size: 2.2vh;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vh;
+  align-self: stretch;
+}
+
+.fixo {
+  background-color: rgba(254, 231, 214, 1);
+  padding: 2vw 5vw 1.5vw 6.5vw;
+  height: 95vh;
+  position: fixed;
+  left: 50%;
+}
+
+.fixo h3 {
+  font-family: schoolbell;
+  font-size: 1.563vw;
+}
+
+h1 {
+  font-size: 2.25vw;
+}
+
+.fixo h1 span {
+  color: rgba(228, 58, 18, 1);
+}
+
+.fixo .texto {
+  gap: 0.5vh;
+}
+
+.fixo .texto img {
+  width: 2vw;
+  margin: 0 0 -0.8vh 0;
+}
+
+.fixo .ilustracao img {
+  width: 35vw;
+}

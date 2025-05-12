@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>matricula</title>
+</head>
+
+<body>
+    <div class="formulario">
+        <div class="topo">
+            <p class="voltar"><img src="icons/arrow-left-02.svg" alt=""> Voltar</p>
+            <h2>Formulário de matrícula</h2>
+            <p>Preencha os dados abaixo para matricular seu filho na escola de <br>
+                educação infantil Estrelas do Amanhã.</p>
+        </div>
+        <div class="info1">
+            <form action="">
+                <h4>Informações da criança</h4>
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" placeholder="Maria Luiza Alves" required>
+
+                <label for="data">Data de nascimento</label>
+                <input type="date" name="data" id="data" required>
+
+                <label for="sexo">Sexo</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="info-medicas">Informações médicas</label>
+                <textarea id="info-medicas" name="info-medicas" rows="3"
+                    placeholder="Ela tem alergia a glúten"></textarea>
+
+                <label for="certidao-upload">Certidão de nascimento</label>
+                <label class="upload-box" for="certidao">
+                    <div class="uploud"><img src="icons/cloud-upload.svg" alt=""></div>
+                    Clique aqui para <br> selecionar arquivos
+                </label>
+                
+                <input type="file" id="certidao" name="certidao" style="display: none">
+            </form>
+        </div>
+        <div class="endereco"></div>
+        <div class="info2"></div>
+        <div class="opcoes"></div>
+        <div class="checkbox"></div>
+        <div class="final"></div>
+
+    </div>
+    <div class="fixo">
+        <div class="texto">
+            <h3><img src="elementos visuais/Frame 48095957.svg" alt=""> Estrelas do Amanhã</h3>
+            <h1>Porque cada momento de <span>aprendizado</span> conta</h1>
+            <p>Inscreva seu filho em nossa escola e veja-o florescer em
+                um ambiente acolhedor, seguro e estimulante.</p>
+
+        </div>
+        <div class="ilustracao"><img src="elementos visuais/Illustration.svg" alt=""></div>
+    </div>
+</body>
+
+</html>
