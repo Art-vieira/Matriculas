@@ -67,7 +67,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input {
   transition: border-color 0.3s;
   border-radius: 0.5vw;
-  border: 0.3vh solid #c0bfbe;
+  border: 2px solid #c0bfbe;
 }
 
 input:hover {
@@ -88,7 +88,7 @@ input:hover {
   margin-top: 2vh;
   color: #333;
   text-align: center;
-  border: 0.4vh dashed #999;
+  border: 2px dashed #999;
   border-radius: 2vh;
   font-size: 2.2vh;
   transition: background-color 0.3s;
@@ -170,7 +170,7 @@ label {
 
 
 .escolha {
-  border: 0.5vh solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 2vh;
   padding: 1vh;
   width: 15vw;
@@ -184,7 +184,7 @@ label {
   margin-top: -2vh;
 }
 .sports {
-  border: 0.5vh solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 2vh;
   padding:  0.3vh 0.2vw 0.1vh 0.3vh  ;
   width: 7.26vw;
