@@ -19,7 +19,7 @@ p {
   padding: 2vw 5vw 1.5vw 6.5vw;
   display: grid;
   grid-template-columns: 100%;
-  gap: 1rem;
+  gap: 5vh;
 }
 
 .formulario .topo .voltar {
@@ -28,10 +28,56 @@ p {
 
 .formulario .topo p img {
   margin: 0 0 -0.8vh 0;
+  width: 2vw;
 }
 
 .formulario .topo h2 {
   margin: 1rem 0 0 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3vh;
+}
+
+#nome {
+  width: 33.5vw;
+  height: 3.5vh;
+  padding: 0.5vh;
+}
+
+#data {
+  width: 32vw;
+  height: 2.5vh;
+  padding: 1vh 1vw;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
+
+#sexo {
+  width: 34.3vw;
+  height: 5vh;
+  padding: 1vh 1vw;
+}
+
+input {
+  transition: border-color 0.3s;
+  border-radius: 0.5vw;
+  border: 0.3vh solid #c0bfbe;
+}
+
+input:hover {
+  border-color: #f3541c;
+}
+
+#info-medicas {
+  width: 32vw;
+  height: 8vh;
+  padding: 1vh 1vw;
 }
 
 .upload-box {
@@ -45,6 +91,11 @@ p {
   border: 0.4vh dashed #999;
   border-radius: 2vh;
   font-size: 2.2vh;
+  transition: background-color 0.3s;
+}
+
+.upload-box:hover {
+  background-color: #dddddd;
 }
 
 label {
@@ -53,6 +104,147 @@ label {
   align-items: flex-start;
   gap: 2vh;
   align-self: stretch;
+  font-size: 1vw;
+}
+
+#cep {
+  width: 33.5vw;
+  height: 5vh;
+  padding: 0.5vh;
+}
+
+.rua {
+  display: flex;
+}
+
+#rua {
+  width: 20vw;
+  height: 4vh;
+  padding: 1vh 1vw;
+  margin: 0 0.8vw 0 0;
+}
+
+#numero {
+  width: 9vw;
+  height: 4vh;
+  padding: 1vh 1vw;
+}
+#cidade {
+  width: 20vw;
+  height: 4vh;
+  padding: 1vh 1vw;
+  margin: 0 0.8vw 0 0;
+}
+#estado {
+  width: 9vw;
+  height: 4vh;
+  padding: 1vh 1vw;
+}
+
+#tamanho {
+  width: 33.5vw;
+  height: 5vh;
+  padding: 0.5vh;
+}
+
+.opcoes label {
+  padding: 1vh 1vw;
+  text-align: center;
+  cursor: pointer;
+  width: 6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s;
+}
+
+.turno {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 34vw;
+  margin-bottom: 3vh;
+}
+
+
+
+.escolha {
+  border: 0.5vh solid #ccc;
+  border-radius: 2vh;
+  padding: 1vh;
+  width: 15vw;
+}
+
+.esportes {
+  display: flex;
+  width: 34vw;
+  margin-top: 3vh;
+  flex-wrap: wrap;
+  margin-top: -2vh;
+}
+.sports {
+  border: 0.5vh solid #ccc;
+  border-radius: 2vh;
+  padding:  0.3vh 0.2vw 0.1vh 0.3vh  ;
+  width: 7.26vw;
+  margin: 0.3vw
+}
+
+.info2 img{
+  align-items: center;
+  justify-content: center;
+}
+
+.esportes label {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.opcoes input[type="radio"] {
+  transform: scale(1.2);
+}
+
+.opcoes input[type="radio"]:checked {
+  accent-color: #ff5722;
+}
+
+.opcoes label img {
+  margin: 1vh 0 -1vh 0;
+}
+
+.opcoes input {
+  border-color: #999;
+}
+
+.final {
+  display: flex;
+  gap: 10px; 
+  justify-content: flex-end; 
+}
+
+.botao1 button,
+.botao2 button{
+  padding: 1.5vh 2.5vw;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1vw;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-bottom: 3rem;
+}
+
+.botao1 button{
+  border: 1.5px solid #e5391c;
+  background-color: transparent;
+  color: #e5391c;
+}
+
+.botao2 button{
+  background-color: #e5391c;
+  color: white;
 }
 
 .fixo {
@@ -72,7 +264,7 @@ h1 {
   font-size: 2.25vw;
 }
 
-.fixo h1 span {
+span {
   color: rgba(228, 58, 18, 1);
 }
 
