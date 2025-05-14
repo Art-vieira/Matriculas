@@ -19,37 +19,155 @@
         <div class="info1">
             <form action="">
                 <h4>Informações da criança</h4>
-                <label for="nome">Nome completo</label>
-                <input type="text" id="nome" placeholder="Maria Luiza Alves" required>
+                <div class="nome">
 
-                <label for="data">Data de nascimento</label>
-                <input type="date" name="data" id="data" required>
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" placeholder="Nome do Usuario" required>
+                </div>
 
-                <label for="sexo">Sexo</label>
-                <select id="sexo" name="sexo" required>
-                    <option value="feminino">Feminino</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="outro">Outro</option>
-                </select>
+                <div class="data">
+                    <label for="data">Data de nascimento</label>
+                    <input type="date" name="data" id="data" required>
+                </div>
 
-                <label for="info-medicas">Informações médicas</label>
-                <textarea id="info-medicas" name="info-medicas" rows="3"
-                    placeholder="Ela tem alergia a glúten"></textarea>
+                <div class="sexo">
 
-                <label for="certidao-upload">Certidão de nascimento</label>
-                <label class="upload-box" for="certidao">
-                    <div class="uploud"><img src="icons/cloud-upload.svg" alt=""></div>
-                    Clique aqui para <br> selecionar arquivos
-                </label>
-                
-                <input type="file" id="certidao" name="certidao" style="display: none">
+                    <label for="sexo">Sexo</label>
+                    <select id="sexo" name="sexo" required>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="info-medicas">
+
+                    <label for="info-medicas">Informações médicas</label>
+                    <textarea id="info-medicas" name="info-medicas" rows="3"
+                        placeholder="Ela tem alergia a glúten"></textarea>
+
+                </div>
+                <div class="box">
+
+                    <label for="certidao-upload">Certidão de nascimento</label>
+                    <label class="upload-box" for="certidao">
+                        <div class="uploud"><img src="icons/cloud-upload.svg" alt=""></div>
+                        Clique aqui para <br> selecionar arquivos
+                    </label>
+
+                    <input type="file" id="certidao" name="certidao" style="display: none">
+                </div>
+            </form>
+
+        </div>
+        <div class="endereco">
+            <form action="">
+
+                <h4>Endereço residencial</h4>
+                <div class="cep">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" maxlength="9" placeholder="0000-000" required>
+                </div>
+                <div class="rua">
+                    <div class="city">
+                        <label for="Rua">Rua</label>
+                        <input type="text" id="rua" placeholder="Rua das Flores">
+                    </div>
+                    <div class="numero">
+                        <label for="Numero">Numero</label>
+                        <input type="text" id="numero" placeholder="123">
+                    </div>
+                </div>
+                <div class="rua">
+                    <div class="city">
+                        <label for="Cidade">Cidade</label>
+                        <input type="text" id="cidade" placeholder="Maraba" required>
+                    </div>
+                    <div class="numero">
+                        <label for="Estado">Estado</label>
+                        <input type="text" id="estado" maxlength="2" placeholder="PA" required>
+                    </div>
+                </div>
             </form>
         </div>
-        <div class="endereco"></div>
-        <div class="info2"></div>
-        <div class="opcoes"></div>
-        <div class="checkbox"></div>
-        <div class="final"></div>
+        <div class="info2">
+            <form action="">
+                <h4>Informações do responsável</h4>
+                <div class="responsavel">
+                    <label for="">Nome do responsável</label>
+                    <input type="text" id="tamanho" placeholder="Miguel Roberto Alves" required>
+                    <label for="">Principal responsável legal e contato de emergência</label>
+                </div>
+                <div class="telefone">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="tamanho" placeholder="00 00000-0000" required>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="tamanho" placeholder="exemplo@gmail.com" required>
+                </div>
+            </form>
+        </div>
+        <div class="opcoes">
+            <h4>Opções de matrícula</h4>
+            <div class="turno">
+                <div class="escolha">
+
+                    <input type="radio" id="manha" name="turno" checked>
+                    <label for="manha">
+                        <img src="icons/sun-cloud-02.png" alt=""><br>Manhã
+                    </label>
+                </div>
+                <div class="escolha">
+
+                    <input type="radio" id="tarde" name="turno">
+                    <label for="tarde">
+                        <img src="icons/sun-02.png" alt=""><br>Tarde
+                    </label>
+                </div>
+            </div>
+            <p>Em qual esporte você gostaria de inscrever seu filho?</p><br>
+            <div class="esportes">
+                <div class="sports">
+
+                    <input type="radio" id="futebol" name="esporte">
+                    <label for="futebol"><img src="icons/football.png" alt=""><br>Futebol</label>
+                </div>
+                <div class="sports">
+
+                    <input type="radio" id="basquete" name="esporte">
+                    <label for="basquete"><img src="icons/basketball-02.png" alt=""><br>Basquete</label>
+                </div>
+                <div class="sports">
+
+                    <input type="radio" id="natacao" name="esporte" checked>
+                    <label for="natacao"><img src="icons/swimming.png" alt=""><br>Natação</label>
+                </div>
+                <div class="sports">
+
+                    <input type="radio" id="yoga" name="esporte">
+                    <label for="yoga"><img src="icons/yoga-02.png" alt=""><br>Yoga</label>
+                </div>
+                <div class="sports">
+
+                    <input type="radio" id="volei" name="esporte">
+                    <label for="volei"><img src="icons/volleyball.png" alt=""><br>Volley</label>
+                </div>
+                <div class="sports">
+
+                    <input type="radio" id="boxe" name="esporte">
+                    <label for="boxe"><img src="icons/boxing-glove-01.png" alt=""><br>Boxe</label>
+                </div>
+            </div>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="" id="">
+            Declaro que li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span> da escola Estrela do Amanhã.
+        </div>
+        <div class="final">
+            <div class="botao1"><button>Salvar respostas</button></div>
+            <div class="botao2"><button>Fazer matrícula</button></div>
+        </div>
 
     </div>
     <div class="fixo">
